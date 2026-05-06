@@ -1,0 +1,302 @@
+/* General Styles */
+:root {
+  --primary: #039be5;
+  --secondary: #e0f7fa;
+  --dark: #1a237e;
+  --light: #ffffff;
+  --accent: #00bfa5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+.grids {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.cards {
+  background-color: var(--light);
+  border-radius: 8px;
+  width: 280px;
+  min-width: 200px;
+  flex: 1;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  background-color: var(--accent);
+  color: var(--light);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-top: 1rem;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--primary);
+  color: var(--light);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+/* Header and nav */
+header {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 1.5rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+nav ul li a {
+  color: var(--light);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 6px;
+  transition:
+    background-color 0.5s ease,
+    color 0.3s ease;
+}
+/* FOOTER */
+footer {
+  background-color: var(--primary);
+  color: var(--light);
+  text-align: center;
+  padding: 2.2rem;
+}
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.social-links a {
+  color: var(--light);
+  font-size: 2.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--dark);
+}
+/* HOME */
+/* Hero Section */
+.hero {
+  max-width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/adopt-jpg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  margin-top: 0;
+  padding: 15rem 1.5rem;
+  color: var(--light);
+}
+.hero h2 {
+  margin-bottom: 1rem;
+  color: var(--light);
+  text-align: center;
+  font-size: 2.5rem;
+}
+.hero-text {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--light);
+  max-width: 700px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 200px;
+
+  border-radius: 8px;
+  object-fit: cover;
+}
+/* Why Adopt section */
+.why-adopt {
+  padding-top: 1rem;
+  align-items: center;
+}
+.why-adopt h2 {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+.reasons-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.reason-card {
+  background-color: var(--light);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+/* Featured Pets section */
+.featured-pets {
+  padding-top: 1rem;
+  align-items: center;
+}
+
+/* ABOUT US */
+/* About */
+.about {
+  margin-top: 2rem;
+  align-items: center;
+}
+.about h2 {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--dark);
+  font-size: 1.25rem;
+}
+.team h2 {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+.team p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--dark);
+  font-size: 1.25rem;
+}
+.team .cards {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.team .cards img {
+  height: 250px;
+}
+/* Stats */
+.stats {
+  margin-top: 0;
+  align-items: center;
+}
+.stats h2 {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+/* Location */
+.location {
+  margin-top: 0;
+  align-items: center;
+}
+.location p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--dark);
+  font-size: 1.25rem;
+}
+.location h2 {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+#map {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+}
+/* Pets */
+.pets-list {
+  margin-top: 0;
+  align-items: center;
+}
+.pets-list h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+.dog,
+.cat,
+.other {
+  margin-top: 2rem;
+}
+
+.animal-type {
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+/* CONTACT */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.contact-form h2 {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+  margin-top: 1rem;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+.contact-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
